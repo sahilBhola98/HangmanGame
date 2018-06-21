@@ -64,7 +64,8 @@ public static void gamestatus() {  //here is the whole game logic taking inputs 
 	System.out.println("                    "+"Chances Left:"+ chances);
 	if(Arrays.equals(question1, word().toCharArray()))
 		{
-		System.out.println("GREAT..............YOU WON!!!!!!!");
+		System.out.println("GREAT..............YOU WON!!!!!!!\n\n");
+		trophy();
 		System.exit(0);
 		}
 	
@@ -91,4 +92,19 @@ public static void deadman() {             //Brings the hangman
 	System.out.println("------------------------------->>>>");
 
 }
+	public static void trophy() {
+	System.out.println("---------------------------");
+	System.out.println("\\                        //  ");
+	System.out.println(" \\                      //       ");
+	System.out.println("  \\                    //");
+	System.out.println("   \\_________________//");
+	System.out.println("              ||");
+	System.out.println("              ||");
+	System.out.println("              ||");
+	System.out.println("              ||");
+	System.out.println("              ||");
+	System.out.println("_______________||_______________");
+ System.out.println("//________________________________\\");
+}
+
 }
